@@ -1,0 +1,228 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+	<title>Mokoi - Play Anywhere, Create Anything</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<link rel="stylesheet" href="./css/default-2014-02-01.css" type="text/css">
+	<script src="./scripts/better-dom.js"></script>
+</head>
+<body id="page_home">
+	<header>
+		<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" id="mokoi_logo">
+			<g transform="scale(0.8,0.8)">
+				<path d="M 40,1 L 31,25 L 40,18 L 49,25 L 40,1 z" data-fill="#d2d2d2" data-hover="#FF0000" style="fill:#d2d2d2;" id="up_arrow"/>
+				<path d="M 79,40 L 55,31 L 62,40 L 55,49 L 79,40 z" data-fill="#9d9d9d" data-hover="#00FF00" style="fill:#9d9d9d;" id="right_arrow"/>
+				<path d="M 40,79 L 31,55 L 40,62 L 49,55 L 40,79 z" data-fill="#696969" data-hover="#0000FF" style="fill:#696969;" id="down_arrow"/>
+				<path d="M 1,40 L 25,31 L 18,40 L 25,49 L 1,40 z" data-fill="#414141" data-hover="#ffff00" style="fill:#414141;" id="left_arrow"/>
+				<rect width="19.6" height="19.6" rx="0" ry="0" x="46.2" y="-10.2" transform="matrix(0.71,0.71,-0.71,0.71,0,0)" id="center_point"/>
+			</g>
+		</svg>
+		<h1>Mokoi</h1>
+		<div>An Open Source Creation Platform for 2D Games</div>
+	</header>
+	<nav>
+		<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32">
+			<g transform="scale(0.4,0.4)">
+				<path d="M 40,1 L 31,25 L 40,18 L 49,25 L 40,1 z" style="fill:#d2d2d2;"/>
+				<path d="M 79,40 L 55,31 L 62,40 L 55,49 L 79,40 z" style="fill:#9d9d9d;"/>
+				<path d="M 40,79 L 31,55 L 40,62 L 49,55 L 40,79 z" style="fill:#696969;"/>
+				<path d="M 1,40 L 25,31 L 18,40 L 25,49 L 1,40 z" style="fill:#414141;"/>
+				<rect width="19.6" height="19.6" rx="0" ry="0" x="46.2" y="-10.2" transform="matrix(0.71,0.71,-0.71,0.71,0,0)" />
+			</g>
+		</svg>
+		<ul id="navlinks">
+			<li data-logo="#left_arrow"><a href="/" id="menu-linkhome">Home</a></li>
+			<li data-logo="#up_arrow"><a href="http://mokoi.github.io/mokoi-docs/" id="menu-linkabout">Docs</a></li>
+			<li data-logo="#down_arrow"><a href="/download/" id="menu-linkdownload">Download</a></li>
+		</ul>
+		<!--form id="search" action="/search/">
+			<input name="q" type="search" placeholder="Enter Search Terms"><button>Search</button>
+		</form-->
+	</nav>
+
+	<section id="inform">
+		<h2 class="hidden">About</h2>
+		<p>Mokoi is a Open Source Game Creation Tool and Gaming Platform.</p>
+		<p>Games made for Mokoi are platform neutral, if a compatible player is available for OS or Device, you can play games with no troubles</p>
+		<h3>Download <em>1.0 beta 1</em></h3>
+		<p>
+			<figure class="overlaynote"><a href="/download/" title="Windows"><img src="images/index/os_windows.png" alt="Windows"></a></figure>
+			<figure class="overlaynote"><a href="/download/" title="Linux 64bit"><img src="images/index/os_linux.png" alt="Linux 64bit"></a><figcaption>64bit</figcaption></figure>
+			<figure class="overlaynote"><a href="/download/" title="Source Code"><img src="images/index/source.png" alt="Source Code"></a><figcaption>Source</figcaption></figure>
+			<div style="display:inline-block; background: rgba(0,0,0,.2); border-radius: .4em; padding:.2em; border:rgba(0,0,0,.5) 1px solid;">
+				<em>Soon For</em>
+				<figure class="overlaynote" title="OS X"><img src="images/index/os_mac.png" alt="Mac OS X"></figure>
+				<figure class="overlaynote" title="Linux 32bit"><img src="images/index/os_linux.png" alt="Linux 32bit"><figcaption>32bit</figcaption></figure>
+				<figure class="overlaynote" title="Android 2.3+"><img src="images/index/os_android.png" alt="Android 2.3+"><figcaption>Player</figcaption></figure>
+				<figure class="overlaynote" title="Nintendo 3DS"><img src="images/index/os_3ds.png" alt="Nintendo 3DS"><figcaption>Player</figcaption></figure>
+				<figure class="overlaynote" title="HTML 5"><img src="images/index/os_html5_by_kuvaly.png" alt="HTML 5"><figcaption>Player</figcaption></figure>
+				<figure class="overlaynote" title="Raspberry Pi"><img src="images/index/device_raspberrypi.png" alt="Raspberry Pi"></figure>
+
+				
+			</div>
+		</p>
+		<aside>
+			<header>Development Links</header>
+			<div><a href="https://sourceforge.net/p/mokoi/source/ci/master/tree/">Stable Source Release</a></div>
+			<div><a href="https://github.com/lukesalisbury/luxengine">Lux Engine (Unstable) </a></div>
+			<div><a href="https://github.com/lukesalisbury/meg">Meg (Unstable)</a></div>
+			<div><a href="https://github.com/lukesalisbury/elix">Elix (Unstable)</a></div>
+			<div><a href="https://github.com/mokoi/mokoi-docs">Documentation</a></div>
+			<div>
+				<header>Content Pack</header>
+				<div><a href="https://github.com/mokoi/mokoi-quest" title="Action/Adventure">Quest Content Pack (Outdated)</a></div>
+				<div><a href="https://github.com/mokoi/mokoi-jump" title="Platformer">Jump Content Pack (Outdated)</a></div>
+				<div><a href="https://github.com/mokoi/mokoi-battle" title="Turn based RPG">Battle Content Pack (Outdated)</a></div>
+			</div>
+			<p><a href="https://twitter.com/intent/tweet?url=http://mokoi.info" class="share twitter">Share on Twitter</a></p>
+			<p><a href="https://plus.google.com/share?url=http://mokoi.info" class="share google">Share on Google+</a></p>
+		</aside>
+		<h3>Show Your Support</h3>
+		<div class="supportbox">
+		</div>
+		<p>Development on Mokoi Project is done in the developers free time, your help support and feedback will keep the developers motivated and will improve the project. Reporting your problems using Mokoi will also help direct the developers in the right direction, so make sure you post your problems on the our <a href="/community/">Community Forums</a>.</p>
+	</section>
+
+	<section id="news">
+		<h2>News</h2>
+		<article>
+			<div class="largetext"><strong>Thursday, 5 February 2015</strong>: Puttytris for HTML5</div>
+			<div>Using Emscripten, Mokoi has been made to work in your browser. You can play Puttytris at <a href="http://mokoi.info/puttytris">mokoi.info/puttytris</a>.</div>
+			<footer><a href="https://twitter.com/intent/tweet?url=http://mokoi.info" class="share twitter">Share on Twitter</a> <a href="https://plus.google.com/share?url=http://mokoi.info" class="share google">Share on Google+</a></footer>
+		</article>
+		<article>
+			<div class="largetext"><strong>Wednesday, 4 February 2015</strong>: Puttytris for Android</div>
+			<div>We made an special build of Mokoi for the Android platform that include the Puttytris game by default. You can download the APK from <a href="http://sourceforge.net/projects/mokoi/files/Mokoi%20Gaming/0.96/mokoi-0_96-android-game-puttytris.apk/download">sourceforge.net/projects/mokoi/files/Mokoi%20Gaming/</div>
+			<footer><a href="https://twitter.com/intent/tweet?url=http://mokoi.info" class="share twitter">Share on Twitter</a> <a href="https://plus.google.com/share?url=http://mokoi.info" class="share google">Share on Google+</a></footer>
+		</article>
+		<article>
+			<div class="largetext"><strong>Monday, 2 February 2015</strong>: 1.0 beta finally release. </div>
+			<div>It has been a long time between drinks and here's a list of most of the changes that I remember.</div>
+			<blockquote><pre>[Engine] SDL2 now handles window resizing and support switching to Full screen mode
+[Engine] Split Config class into two, one for the core and platform and the other for game.
+[Engine] UserInterface now draws game content.
+[Engine] SDL2 now used SDL_GameController 
+[Engine] Minor changes to the way the Controller is configured
+[Engine] layer effect 
+[Engine] Foreign function interface.
+[Engine] SDL2 support
+[Engine] Basic touch screen controllers
+[Engine] Virtual Sprite
+[Engine] Game can be appended the binary
+[Engine] Add Pawn 4 Scripting language
+[Engine] Minor Changes to Map file format.
+[Engine] Added support for displaying Input icon in Text.
+[Engine] Moved the PC's OpenGL functions to a more modern version.
+[Engine] Switch to XML format for spritesheets.
+[Engine] Added Sprite Borders.
+
+[Editor] basic build to windows distribution.
+[Editor] Virtual Sprite
+[Editor] Replaced Alchera with Meg
+[Editor] Switch to XML format for spritesheets.
+[Editor] Editor will offer to copy project if read only.
+[Editor] Editor now will open projects or import content on file drop.
+[Editor] Added Sprite Border.
+[Editor] drop and drag in the editor is pretty much complete.
+[Editor] GTK3 support
+[Editor] polygons can be added to maps. Paths can also be modified.
+[Editor] the new mokoi pawn compiler nows builds 32 & 64 bits script. It will be used instead of the compiler being embedded in the new editor.</pre></blockquote>
+			<footer><a href="https://twitter.com/intent/tweet?url=http://mokoi.info" class="share twitter">Share on Twitter</a> <a href="https://plus.google.com/share?url=http://mokoi.info" class="share google">Share on Google+</a></footer>
+		</article>
+		<article>
+			<div class="largetext"><strong>Sunday, 18 August 2013</strong>: 1.0 alpha/0.94 delayed. </div>
+			
+		</article>
+		<article>
+			<div class="largetext"><strong>Sunday, 3 February 2013</strong>: Alchera 0.93a crashes on OS X 10.7+ </div>
+			<pre>Dyld Error Message:
+  Symbol not found: _iconv
+  Referenced from: /usr/lib/libcups.2.dylib
+  Expected in: Alchera.app/Contents/Resources/lib/libiconv.2.dylib
+ in /usr/lib/libcups.2.dylib
+			</pre>
+		</article>
+		<article>
+			<div class="largetext"><strong>Sunday, 22 July 2012</strong>: 0.93a has been release to squash some bugs.</div>
+			<ul>
+				<li>Bugs #3540436, #3540435, #3530042, #3528957 fixed.</li>
+				<li>Fixed 64bit handling for .game format.</li>
+				<li>Fixed for <a href="/community/read.php?3,203,203">Non-SSE2 CPU</a> on Windows System.</li>
+			</ul>
+			<small>The Linux 64bit build is currently is incompatible with other versions, this will be fixed in the next release.</small>
+		</article>
+		<article>
+			<div class="largetext"><strong>Tuesday, 8 May 2012</strong>: 0.93 has been released which can be downloaded from <a href="https://sourceforge.net/projects/mokoi/">https://sourceforge.net/projects/mokoi/</a></div>
+			<div>An Haiku version can be download from <a href="http://sourceforge.net/projects/mokoi/files/Development%20Builds/">sourceforge.net/projects/mokoi/files/Development%20Builds/</a>. Progress on Raspberry Pi, Nintendo DS and Dreamcast ports can be <a href="http://mokoi.info/community/read.php?1,198,199,page=1#msg-199">found in the forums</a></div>
+			<ul>
+				<li>Engine: Rewrote the Map Sectioning code.</li>
+				<li>Editor: Can be compile against GTK+3.</li>
+				<li>Editor: Now uses GtkNotebook for map editing.</li>
+				<li>Heaps of bug fixes and tweaks.</li>
+			</ul>
+			<small>The Linux 64bit build is currently is incompatible with other versions, this will be fixed in the next release.</small>
+		</article>
+		<article>
+			<div class="largetext"><strong>Tuesday, 29 November 2011</strong>: 0.92 has been released which can be downloaded from <a href="https://sourceforge.net/projects/mokoi/">https://sourceforge.net/projects/mokoi/</a></div>
+			<ul>
+				<li>[Editor] Runtime Option window improvements.</li>
+				<li>[Editor] Ctrl-space to bring up auto-complete ( missing on OS X version )</li>
+				<li>[Pawn API] Added x,y to SectionSet.</li>
+				<li>[Pawn API] Added section to MapGridValid.</li>
+				<li>[Pawn API] Added x, y, to MapSet.</li>
+				<li>[Pawn API] Added CollisionGetRect.</li>
+			</ul>
+		</article>
+		<article>
+			<div class="largetext"><strong>Tuesday, 23 August 2011</strong>: 0.91 has been released which can be downloaded from <a href="https://sourceforge.net/projects/mokoi/">https://sourceforge.net/projects/mokoi/</a></div>
+			<ul>
+				<li>[Engine] Added Shaders to OpenGL display mode. </li>
+				<li>[Engine] GUI Improvements. </li>
+				<li>[Engine] Added GUI styling via CSS. </li>
+				<li>[Engine] Displays a pointer for each player. </li>
+				<li>[Engine] Added Controls Axis support for the Input Pointer. </li>
+				<li>[Engine] Portal supports multiple pages. </li>
+				<li>[Editor] Map editor now try display whole map without resize. </li>
+				<li>[Editor] Fixed: new object selection with keys on the Map editor </li>
+				<li>[Editor] Fixed: map editor support of select new object with keyboard input. </li>
+				<li>[Editor] Fixed: game creation code </li>
+				<li>[Editor] Entity editor now scroll correctly. </li>
+				<li>[Editor] Map Object now have alpha value.</li>
+			</ul>
+		</article>
+	</section>
+
+	<footer>
+
+	</footer>
+<script type="text/javascript" src="//www.google-analytics.com/ga.js"></script>
+<script>
+try { var pageTracker = _gat._getTracker("UA-2033908-1"); pageTracker._trackPageview(); } catch(err) {}
+
+DOM.extend('[data-logo]', {
+	constructor: function() {
+		this.on('mouseenter', this.onMouseEnter ).on('mouseleave', this.onMouseLeave)
+	},
+	onMouseEnter: function() {
+		var t = DOM.find(this.get('data-logo'))
+		t.style('fill', t.get('data-hover') )
+	},
+	onMouseLeave: function() {
+		var t = DOM.find(this.get('data-logo'))
+		t.style('fill', t.get('data-fill') )
+	}
+});
+
+var nav_icon = DOM.find('nav svg');
+window.onscroll = function(ev) {
+	if ( window.scrollY )
+		nav_icon.show()
+	else
+		nav_icon.hide()
+};
+
+</script>
+</body>
+</html>

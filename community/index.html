@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+	<title>Mokoi</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<link rel="stylesheet" href="/css/default-2014-02-01.css" type="text/css">
+	<script src="/scripts/better-dom.js"></script>
+</head>
+
+<body id="page_download">
+	<header>
+		<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" id="mokoi_logo">
+			<g transform="scale(0.8,0.8)">
+				<path d="M 40,1 L 31,25 L 40,18 L 49,25 L 40,1 z" data-fill="#d2d2d2" data-hover="#FF0000" style="fill:#d2d2d2;" id="up_arrow"/>
+				<path d="M 79,40 L 55,31 L 62,40 L 55,49 L 79,40 z" data-fill="#9d9d9d" data-hover="#00FF00" style="fill:#9d9d9d;" id="right_arrow"/>
+				<path d="M 40,79 L 31,55 L 40,62 L 49,55 L 40,79 z" data-fill="#696969" data-hover="#0000FF" style="fill:#696969;" id="down_arrow"/>
+				<path d="M 1,40 L 25,31 L 18,40 L 25,49 L 1,40 z" data-fill="#414141" data-hover="#ffff00" style="fill:#414141;" id="left_arrow"/>
+				<rect width="19.6" height="19.6" rx="0" ry="0" x="46.2" y="-10.2" transform="matrix(0.71,0.71,-0.71,0.71,0,0)" id="center_point"/>
+			</g>
+		</svg>
+		<h1>Mokoi Community</h1>
+		<div>Talk, Play, Create</div>
+	</header>
+	<nav>
+		<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32">
+			<g transform="scale(0.4,0.4)">
+				<path d="M 40,1 L 31,25 L 40,18 L 49,25 L 40,1 z" style="fill:#d2d2d2;"/>
+				<path d="M 79,40 L 55,31 L 62,40 L 55,49 L 79,40 z" style="fill:#9d9d9d;"/>
+				<path d="M 40,79 L 31,55 L 40,62 L 49,55 L 40,79 z" style="fill:#696969;"/>
+				<path d="M 1,40 L 25,31 L 18,40 L 25,49 L 1,40 z" style="fill:#414141;"/>
+				<rect width="19.6" height="19.6" rx="0" ry="0" x="46.2" y="-10.2" transform="matrix(0.71,0.71,-0.71,0.71,0,0)" />
+			</g>
+		</svg>
+		<ul id="navlinks">
+			<li data-logo="#left_arrow"><a href="/" id="menu-linkhome">Home</a></li>
+			<li data-logo="#up_arrow"><a href="http://mokoi.github.io/mokoi-docs/" id="menu-linkabout">Docs</a></li>
+			<li data-logo="#right_arrow"><a href="/community/" id="menu-linkgames">Community</a></li>
+			<li data-logo="#down_arrow"><a href="/download/" id="menu-linkdownload">Download</a></li>
+		</ul>
+		<form id="search" action="/search/">
+			<input name="q" type="search" placeholder="Enter Search Terms"><button>Search</button>
+		</form>
+	</nav>
+	<section class="largetext">
+		<h2>Forums are currently down, will be back soon</h2>
+	</section>
+	<footer>
+		<div style="float:left;"><a href="http://sourceforge.net/projects/mokoi"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=173943&amp;type=11" width="120" height="30" alt="Get Mokoi Gaming at SourceForge.net. Fast, secure and Free Open Source software downloads" /></a></div>
+	</footer>
+<script type="text/javascript" src="//www.google-analytics.com/ga.js"></script>
+<script>
+try { var pageTracker = _gat._getTracker("UA-2033908-1"); pageTracker._trackPageview(); } catch(err) {}
+
+DOM.extend('[data-logo]', {
+	constructor: function() {
+		this.on('mouseenter', this.onMouseEnter ).on('mouseleave', this.onMouseLeave)
+	},
+	onMouseEnter: function() {
+		var t = DOM.find(this.get('data-logo'))
+		t.style('fill', t.get('data-hover') )
+	},
+	onMouseLeave: function() {
+		var t = DOM.find(this.get('data-logo'))
+		t.style('fill', t.get('data-fill') )
+	}
+});
+
+var nav_icon = DOM.find('nav svg');
+window.onscroll = function(ev) {
+	if ( window.scrollY )
+		nav_icon.show()
+	else
+		nav_icon.hide()
+};
+
+</script>
+</body>
+</html>
