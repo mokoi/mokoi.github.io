@@ -1,3 +1,4 @@
 http://mokoi.info/
 http://mokoi.info/puttytris/
 http://mokoi.info/download/
+http://mokoi.info/mokoi-docs/
