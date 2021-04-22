@@ -6,7 +6,6 @@
 	<meta charset="utf-8">
 	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 	<link rel="stylesheet" href="./css/default-2014-02-01.css" type="text/css">
-	<script src="./scripts/better-dom.js"></script>
 </head>
 <body id="page_home">
 	<header>
@@ -34,7 +33,7 @@
 		</svg>
 		<ul id="navlinks">
 			<li data-logo="#left_arrow"><a href="/" id="menu-linkhome">Home</a></li>
-			<li data-logo="#up_arrow"><a href="/mokoi-docs/" id="menu-linkabout">Docs</a></li>
+			<li data-logo="#up_arrow"><a href="http://mokoi.github.io/mokoi-docs/" id="menu-linkabout">Docs</a></li>
 			<li data-logo="#down_arrow"><a href="/download/" id="menu-linkdownload">Download</a></li>
 		</ul>
 		<!--form id="search" action="/search/">
@@ -51,24 +50,20 @@
 			<figure class="overlaynote"><a href="/download/" title="Windows"><img src="images/index/os_windows.png" alt="Windows"></a></figure>
 			<figure class="overlaynote"><a href="/download/" title="Linux 64bit"><img src="images/index/os_linux.png" alt="Linux 64bit"></a><figcaption>64bit</figcaption></figure>
 			<figure class="overlaynote"><a href="/download/" title="Source Code"><img src="images/index/source.png" alt="Source Code"></a><figcaption>Source</figcaption></figure>
-			<div style="display:inline-block; background: rgba(0,0,0,.2); border-radius: .4em; padding:.2em; border:rgba(0,0,0,.5) 1px solid;">
-				<em>Soon For</em>
-				<figure class="overlaynote" title="OS X"><img src="images/index/os_mac.png" alt="Mac OS X"></figure>
-				<figure class="overlaynote" title="Linux 32bit"><img src="images/index/os_linux.png" alt="Linux 32bit"><figcaption>32bit</figcaption></figure>
-				<figure class="overlaynote" title="Android 2.3+"><img src="images/index/os_android.png" alt="Android 2.3+"><figcaption>Player</figcaption></figure>
-				<figure class="overlaynote" title="Nintendo 3DS"><img src="images/index/os_3ds.png" alt="Nintendo 3DS"><figcaption>Player</figcaption></figure>
-				<figure class="overlaynote" title="HTML 5"><img src="images/index/os_html5_by_kuvaly.png" alt="HTML 5"><figcaption>Player</figcaption></figure>
-				<figure class="overlaynote" title="Raspberry Pi"><img src="images/index/device_raspberrypi.png" alt="Raspberry Pi"></figure>
-
-				
-			</div>
 		</p>
+		<div style="display: inline-block; background: rgba(0,0,0,.2); border-radius: .4em; padding:.2em; border:rgba(0,0,0,.5) 1px solid;">
+			<div>Possible Platforms</div>
+			<figure class="overlaynote" title="OS X"><img src="images/index/os_mac.png" alt="Mac OS X"></figure>
+			<figure class="overlaynote" title="Linux 32bit"><img src="images/index/os_linux.png" alt="Linux 32bit"><figcaption>32bit</figcaption></figure>
+			<figure class="overlaynote" title="Android 2.3+"><img src="images/index/os_android.png" alt="Android 2.3+"><figcaption>Player</figcaption></figure>
+			<figure class="overlaynote" title="Nintendo 3DS"><img src="images/index/os_3ds.png" alt="Nintendo 3DS"><figcaption>Player</figcaption></figure>
+			<figure class="overlaynote" title="HTML 5"><img src="images/index/os_html5_by_kuvaly.png" alt="HTML 5"><figcaption>Player</figcaption></figure>
+			<figure class="overlaynote" title="Raspberry Pi"><img src="images/index/device_raspberrypi.png" alt="Raspberry Pi"></figure>
+		</div>
 		<aside>
 			<header>Development Links</header>
-			<div><a href="https://sourceforge.net/p/mokoi/source/ci/master/tree/">Stable Source Release</a></div>
-			<div><a href="https://github.com/lukesalisbury/luxengine">Lux Engine (Unstable) </a></div>
-			<div><a href="https://github.com/lukesalisbury/meg">Meg (Unstable)</a></div>
-			<div><a href="https://github.com/lukesalisbury/elix">Elix (Unstable)</a></div>
+			<div><a href="https://github.com/mokoi/luxengine">Lux Engine</a></div>
+			<div><a href="https://github.com/mokoi/meg">Meg</a></div>
 			<div><a href="https://github.com/mokoi/mokoi-docs">Documentation</a></div>
 			<div>
 				<header>Content Pack</header>
@@ -76,8 +71,8 @@
 				<div><a href="https://github.com/mokoi/mokoi-jump" title="Platformer">Jump Content Pack (Outdated)</a></div>
 				<div><a href="https://github.com/mokoi/mokoi-battle" title="Turn based RPG">Battle Content Pack (Outdated)</a></div>
 			</div>
-			<p><a href="https://twitter.com/intent/tweet?url=http://mokoi.info" class="share twitter">Share on Twitter</a></p>
-			<p><a href="https://plus.google.com/share?url=http://mokoi.info" class="share google">Share on Google+</a></p>
+			<p><a href="https://twitter.com/intent/tweet?url=http://mokoi.github.io" class="share twitter">Share on Twitter</a></p>
+			<p><a href="https://plus.google.com/share?url=http://mokoi.github.io" class="share google">Share on Google+</a></p>
 		</aside>
 		<h3>Show Your Support</h3>
 		<div class="supportbox">
@@ -88,14 +83,19 @@
 	<section id="news">
 		<h2>News</h2>
 		<article>
+			<div class="largetext"><strong>Thursday, 22 April 2021</strong>: Project is dead</div>
+			<div> Thanks for everyone who tried out my software.</div>
+			<footer><a href="https://twitter.com/intent/tweet?url=http://mokoi.github.io" class="share twitter">Share on Twitter</a> </footer>
+		</article>
+		<article>
 			<div class="largetext"><strong>Thursday, 5 February 2015</strong>: Puttytris for HTML5</div>
-			<div>Using Emscripten, Mokoi has been made to work in your browser. You can play Puttytris at <a href="http://mokoi.info/puttytris">mokoi.info/puttytris</a>.</div>
-			<footer><a href="https://twitter.com/intent/tweet?url=http://mokoi.info" class="share twitter">Share on Twitter</a> <a href="https://plus.google.com/share?url=http://mokoi.info" class="share google">Share on Google+</a></footer>
+			<div>Using Emscripten, Mokoi has been made to work in your browser. You can play Puttytris at <a href="http://mokoi.github.io/puttytris">mokoi.github.io/puttytris</a>.</div>
+			<footer><a href="https://twitter.com/intent/tweet?url=http://mokoi.github.io" class="share twitter">Share on Twitter</a> <a href="https://plus.google.com/share?url=http://mokoi.github.io" class="share google">Share on Google+</a></footer>
 		</article>
 		<article>
 			<div class="largetext"><strong>Wednesday, 4 February 2015</strong>: Puttytris for Android</div>
 			<div>We made an special build of Mokoi for the Android platform that include the Puttytris game by default. You can download the APK from <a href="http://sourceforge.net/projects/mokoi/files/Mokoi%20Gaming/0.96/mokoi-0_96-android-game-puttytris.apk/download">sourceforge.net/projects/mokoi/files/Mokoi%20Gaming/</div>
-			<footer><a href="https://twitter.com/intent/tweet?url=http://mokoi.info" class="share twitter">Share on Twitter</a> <a href="https://plus.google.com/share?url=http://mokoi.info" class="share google">Share on Google+</a></footer>
+			<footer><a href="https://twitter.com/intent/tweet?url=http://mokoi.github.io" class="share twitter">Share on Twitter</a> <a href="https://plus.google.com/share?url=http://mokoi.github.io" class="share google">Share on Google+</a></footer>
 		</article>
 		<article>
 			<div class="largetext"><strong>Monday, 2 February 2015</strong>: 1.0 beta finally release. </div>
@@ -129,7 +129,7 @@
 [Editor] GTK3 support
 [Editor] polygons can be added to maps. Paths can also be modified.
 [Editor] the new mokoi pawn compiler nows builds 32 & 64 bits script. It will be used instead of the compiler being embedded in the new editor.</pre></blockquote>
-			<footer><a href="https://twitter.com/intent/tweet?url=http://mokoi.info" class="share twitter">Share on Twitter</a> <a href="https://plus.google.com/share?url=http://mokoi.info" class="share google">Share on Google+</a></footer>
+			<footer><a href="https://twitter.com/intent/tweet?url=http://mokoi.github.io" class="share twitter">Share on Twitter</a> <a href="https://plus.google.com/share?url=http://mokoi.github.io" class="share google">Share on Google+</a></footer>
 		</article>
 		<article>
 			<div class="largetext"><strong>Sunday, 18 August 2013</strong>: 1.0 alpha/0.94 delayed. </div>
@@ -155,7 +155,7 @@
 		</article>
 		<article>
 			<div class="largetext"><strong>Tuesday, 8 May 2012</strong>: 0.93 has been released which can be downloaded from <a href="https://sourceforge.net/projects/mokoi/">https://sourceforge.net/projects/mokoi/</a></div>
-			<div>An Haiku version can be download from <a href="http://sourceforge.net/projects/mokoi/files/Development%20Builds/">sourceforge.net/projects/mokoi/files/Development%20Builds/</a>. Progress on Raspberry Pi, Nintendo DS and Dreamcast ports can be <a href="http://mokoi.info/community/read.php?1,198,199,page=1#msg-199">found in the forums</a></div>
+			<div>An Haiku version can be download from <a href="http://sourceforge.net/projects/mokoi/files/Development%20Builds/">sourceforge.net/projects/mokoi/files/Development%20Builds/</a>. Progress on Raspberry Pi, Nintendo DS and Dreamcast ports can be found on YouTube: <a href=https://youtu.be/ARbsaU1IH54>youtu.be/ARbsaU1IH54</a></div>
 			<ul>
 				<li>Engine: Rewrote the Map Sectioning code.</li>
 				<li>Editor: Can be compile against GTK+3.</li>
@@ -201,26 +201,17 @@
 <script>
 try { var pageTracker = _gat._getTracker("UA-2033908-1"); pageTracker._trackPageview(); } catch(err) {}
 
-DOM.extend('[data-logo]', {
-	constructor: function() {
-		this.on('mouseenter', this.onMouseEnter ).on('mouseleave', this.onMouseLeave)
-	},
-	onMouseEnter: function() {
-		var t = DOM.find(this.get('data-logo'))
-		t.style('fill', t.get('data-hover') )
-	},
-	onMouseLeave: function() {
-		var t = DOM.find(this.get('data-logo'))
-		t.style('fill', t.get('data-fill') )
-	}
+var nav_icon = document.querySelector('nav svg');
+var menu = document.querySelectorAll('[data-logo]')
+menu.forEach( item => {
+	var el = document.querySelector(item.dataset.logo)
+	item.addEventListener('mouseenter', ()=>{ el.style.fill = el.dataset.hover})
+	item.addEventListener('mouseleave', ()=>{ el.style.fill = el.dataset.fill})
 });
 
-var nav_icon = DOM.find('nav svg');
 window.onscroll = function(ev) {
-	if ( window.scrollY )
-		nav_icon.show()
-	else
-		nav_icon.hide()
+	nav_icon.style.display = window.scrollY ? 'block' : 'none'
+	nav_icon.style.opacity = window.scrollY ? 1 : 0
 };
 
 </script>

@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 	<link rel="stylesheet" href="/css/default-2014-02-01.css" type="text/css">
-	<script src="/scripts/better-dom.js"></script>
+
 </head>
 <body id="page_download">
 	<header>
@@ -79,10 +79,8 @@
 
 	<section>
 		<h2>Development Links</h2>
-		<div><a href="https://sourceforge.net/p/mokoi/source/ci/master/tree/">Stable Source Release</a></div>
-		<div><a href="https://github.com/lukesalisbury/luxengine">Lux Engine (Unstable) </a></div>
-		<div><a href="https://github.com/lukesalisbury/meg">Meg (Unstable)</a></div>
-		<div><a href="https://github.com/lukesalisbury/elix">Elix (Unstable)</a></div>
+		<div><a href="https://github.com/mokoi/luxengine">Lux Engine</a></div>
+		<div><a href="https://github.com/mokoi/meg">Meg</a></div>
 		<div><a href="https://github.com/mokoi/mokoi-docs">Documentation</a></div>
 
 		<h2>Content Pack</h2>
@@ -99,28 +97,18 @@
 <script>
 try { var pageTracker = _gat._getTracker("UA-2033908-1"); pageTracker._trackPageview(); } catch(err) {}
 
-DOM.extend('[data-logo]', {
-	constructor: function() {
-		this.on('mouseenter', this.onMouseEnter ).on('mouseleave', this.onMouseLeave)
-	},
-	onMouseEnter: function() {
-		var t = DOM.find(this.get('data-logo'))
-		t.style('fill', t.get('data-hover') )
-	},
-	onMouseLeave: function() {
-		var t = DOM.find(this.get('data-logo'))
-		t.style('fill', t.get('data-fill') )
-	}
+var nav_icon = document.querySelector('nav svg');
+var menu = document.querySelectorAll('[data-logo]')
+menu.forEach( item => {
+	var el = document.querySelector(item.dataset.logo)
+	item.addEventListener('mouseenter', ()=>{ el.style.fill = el.dataset.hover})
+	item.addEventListener('mouseleave', ()=>{ el.style.fill = el.dataset.fill})
 });
 
-var nav_icon = DOM.find('nav svg');
 window.onscroll = function(ev) {
-	if ( window.scrollY )
-		nav_icon.show()
-	else
-		nav_icon.hide()
+	nav_icon.style.display = window.scrollY ? 'block' : 'none'
+	nav_icon.style.opacity = window.scrollY ? 1 : 0
 };
-
 </script>
 </body>
 </html>
